@@ -2,3 +2,6 @@ myenv/
 __pycache__/
 *.pyc
 .DS_Store
+
+model/cnn_model/
+model/fc_model/
