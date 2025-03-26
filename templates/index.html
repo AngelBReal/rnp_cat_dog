@@ -8,12 +8,24 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      background-color: #f5f5f5;
+      background-color: #e8f0fe;
+    }
+    header {
+      background-color: #0d6efd;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    header img {
+      width: 40px;
+      height: 40px;
     }
     h1 {
-      margin-top: 1rem;
-      font-size: 2.5rem;
-      text-align: center;
+      font-size: 2rem;
+      margin: 0;
     }
     #video {
       border-radius: 12px;
@@ -29,12 +41,27 @@
       margin-top: 1rem;
       text-align: center;
     }
+    footer {
+      background-color: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    footer a {
+      color: #ffc107;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
   </style>
 </head>
 <body>
-  <div class="container text-center">
-    <h1>¿Perro o Gato?</h1>
+  <header>
+    <img src="/static/logo.png" alt="Logo">
+    <h1>Clasificador de Perros y Gatos</h1>
+  </header>
 
+  <div class="container text-center">
     <div class="select-container">
       <label for="modelo" class="form-label">Modelo:</label>
       <select id="modelo" class="form-select w-auto d-inline-block">
@@ -47,6 +74,12 @@
     <canvas id="canvas" width="100" height="100" style="display: none;"></canvas>
     <p id="resultado">Esperando...</p>
   </div>
+
+  <footer>
+    Hecho por Tu Angel Barraza &mdash;
+    <a href="https://github.com/AngelBReal" target="_blank">GitHub</a> |
+    <a href="https://www.linkedin.com/in/angelbarrazareal/" target="_blank">LinkedIn</a>
+  </footer>
 
   <script src="/static/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
