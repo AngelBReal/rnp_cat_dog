@@ -1,0 +1,6 @@
+models/h5/cnn_tuned_aug_dropout.h5
+models/h5/perros-gatos-fc-ad.h5
+myenv/
+__pycache__/
+*.pyc
+.DS_Store
