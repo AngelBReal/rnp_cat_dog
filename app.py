@@ -8,8 +8,8 @@ from PIL import Image
 app = Flask(__name__)
 
 # Cargar ambos modelos
-cnn_model = tf.keras.models.load_model("model/cnn_model.h5")
-fc_model = tf.keras.models.load_model("model/fc_model.h5")
+cnn_model = tf.keras.models.load_model("models/h5/cnn_tuned_aug_dropout.h5")
+fc_model = tf.keras.models.load_model("models/h5/perros-gatos-fc-ad.h5")
 
 @app.route("/")
 def index():
