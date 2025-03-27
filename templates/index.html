@@ -69,8 +69,11 @@
         <option value="fc">Dense</option>
       </select>
     </div>
-
     <video id="video" autoplay playsinline width="300" height="300"></video>
+    <!-- Botón centrado debajo del video -->
+    <div class="d-flex justify-content-center mt-2">
+      <button onclick="cambiarCamara()" class="btn btn-secondary">Cambiar cámara</button>
+    </div>
     <canvas id="canvas" width="100" height="100" style="display: none;"></canvas>
     <p id="resultado">Esperando...</p>
   </div>
